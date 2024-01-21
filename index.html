@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(http://getwallpapers.com/wallpaper/full/8/a/7/542538.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            text-align: center;
+            height: 850px;
+            padding-top: 100px;
+        }
+        h1 {
+            margin-top: 100px;
+            background-image: linear-gradient(yellow, orange);
+            width: 590px;
+            margin-left: 650px;
+            border-radius: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+            height: 100px;
+            
+        }
+        #color {
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            margin-top: 100px;
+            border-radius: 100px;
+            margin-left: 840px;
+            
+        }
+        div {
+            font-size: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            justify-content: center;
+            
+
+        }
+        button {
+            height: 80px;
+            width: 180px;
+            margin-left: 0;
+            margin-top: 100px;
+            background-image: linear-gradient(yellow, orange);
+            border-radius: 30px;
+            font-weight: bolder;
+            font-size: 18px;
+            color: black;
+        }
+        button:hover {
+            background-image: linear-gradient(rgb(66, 41, 10), rgb(19, 1, 1));
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript colorChanger() Hands-on.</h1>
+    <button id="btn">Click Me!</button>
+    <div id="color" ></div><br>
+    
+
+    <script>
+        const color = document.getElementById("color");
+        let btn = document.getElementById("btn");
+
+        btn.addEventListener('click', changeColor);
+
+        function changeColor() {
+            if (color.style.backgroundColor === "green") {
+                color.style.backgroundColor = "blue";
+            } else {
+                color.style.backgroundColor = "green";
+            }
+        }
+    </script>
+</body>
+</html>
